@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talisma-Finance Sector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="images/logo white.png" alt="" width="200" />
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <a href="">Solutions</a>
+          <a href="#">Platform</a>
+          <a href="#">Resources</a>
+          <a href="#">About</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <button class="cta-btn desktop-only">
+          <a
+            href="https://outlook.office.com/book/TalismaCX@talisma.com/?ismsaljsauthenabled"
+            >Book Appointment</a
+          >
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" onclick="toggleMenu()">
+          <span id="menu-icon">☰</span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="nav-mobile" id="mobileMenu">
+        <a href="#">Solutions</a>
+        <a href="#">Platform</a>
+        <a href="#">Resources</a>
+        <a href="#">About</a>
+        <button class="cta-btn mobile-cta">
+          <a
+            href="https://outlook.office.com/book/TalismaCX@talisma.com/?ismsaljsauthenabled"
+            >Book Appointment</a
+          >
+        </button>
+      </nav>
+    </header>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const icon = document.getElementById("menu-icon");
+
+        menu.classList.toggle("open");
+        icon.textContent = menu.classList.contains("open") ? "✕" : "☰";
+      }
+    </script>
+
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-grid">
+          <!-- LEFT CONTENT -->
+          <div class="hero-content">
+            <!-- Heading -->
+            <div class="hero-text">
+              <!-- <div class="badge">🎓 Higher Education – US.</div> -->
+              <h1><span>AI-For</span></h1>
+
+              <h2>Finance</h2>
+              <p>
+                Navigate regulatory mandates, elevate customer experience, and
+                scale operations with AI-powered solutions for DPDP compliance,
+                customer intelligence, and operational efficiency.
+              </p>
+            </div>
+
+            <!-- Features -->
+            <div class="hero-features">
+              <div>
+                <span className="text-purple-400">></span>
+                <span>DPDP Compliance</span>
+              </div>
+              <div>
+                <span className="text-purple-400">></span>
+                <span>Customer 360</span>
+              </div>
+              <div>
+                <span className="text-purple-400">></span>
+                <span>Data Tokenization</span>
+              </div>
+              <div>
+                <span className="text-purple-400">></span>
+                <span>Risk Intelligence</span>
+              </div>
+            </div>
+            <!-- Email Input -->
+            <div class="hero-form">
+              <!-- <input
+                type="email"
+                id="email"
+                placeholder="Enter email to book a walkthrough"
+              /> -->
+              <button class="cta-btn">
+                <a
+                  href="https://outlook.office.com/book/TalismaUS@talisma.com/?ismsaljsauthenabled"
+                  >Book Appointment</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT IMAGE -->
+          <div class="hero-image-wrapper">
+            <div class="image-border">
+              <img src="images/32914.jpg" alt="Professional educator" />
+            </div>
+
+            <!-- Stats Badge -->
+            <!-- <div class="stats-badge">
+              <strong>94.8%</strong>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- challenges section -->
+    <section class="challenges">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+          <h2>Three Pillars of <span>AI-Powered Transformation</span></h2>
+          <p>
+            India's financial services sector operates under unprecedented
+            pressure from regulatory mandates, customer expectations, and
+            operational scale. Talisma addresses these challenges through three
+            independent but complementary solution pillars.
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+          <!-- Card 01 -->
+          <div class="card">
+            <div class="card-content">
+              <div class="icon-box purple">🛡️</div>
+
+              <div class="card-text">
+                <div class="card-header">
+                  <div>
+                    <h3>
+                      DPDP Compliance Automation – From Obligation to
+                      Operational Strength
+                    </h3>
+                    <p class="description">
+                      The DPDP Act mandates financial institutions, as Data
+                      Fiduciaries, to ensure personal data is protected
+                      throughout its lifecycle—from collection to processing,
+                      storage, and deletion. Manual or partially automated
+                      compliance approaches are expensive, slow, and expose
+                      institutions to regulatory and reputational risk.
+                    </p>
+                  </div>
+                  <span class="number">01</span>
+                </div>
+
+                <p class="details">
+                  Talisma's DPDP Compliance Automation uses AI to operationalize
+                  compliance across systems. Key capabilities include automated
+                  masking and tokenization of PII, AI-driven access controls,
+                  continuous audit logging, secure backups, and breach-response
+                  readiness. Compliance teams gain real-time visibility into
+                  data usage, access patterns, and risk indicators—ensuring
+                  continuous compliance rather than periodic checks.
+                </p>
+
+                <p class="personas">
+                  <strong>Primary Buyer Personas:</strong> CIO, CISO, COO
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 02 -->
+          <div class="card">
+            <div class="card-content">
+              <div class="icon-box blue">👥</div>
+
+              <div class="card-text">
+                <div class="card-header">
+                  <div>
+                    <h3>Customer 360 Intelligence – One Customer, One Truth</h3>
+                    <p class="description">
+                      Customer data in financial institutions is fragmented
+                      across core banking systems, loan origination platforms,
+                      CRM tools, service desks, and digital channels. This
+                      fragmentation prevents teams from understanding the
+                      complete customer journey, leading to disjointed
+                      experiences, missed revenue opportunities, and erosion of
+                      trust.
+                    </p>
+                  </div>
+                  <span class="number">02</span>
+                </div>
+
+                <p class="details">
+                  Talisma's Customer 360 Intelligence platform unifies customer
+                  data into a single, actionable view enriched with AI-driven
+                  insights. Service teams see full history including
+                  demographics, products, issues, and sentiment. Sales teams
+                  leverage AI predictions for cross-sell/up-sell opportunities,
+                  at-risk customer flags, and next-best actions. Decision-makers
+                  gain accurate intelligence to drive personalization,
+                  retention, and long-term customer value.
+                </p>
+
+                <p class="personas">
+                  <strong>Primary Buyer Personas:</strong> VP Customer Service,
+                  VP Sales, VP Account Management, COO
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 03 -->
+          <div class="card">
+            <div class="card-content">
+              <div class="icon-box teal">✨</div>
+
+              <div class="card-text">
+                <div class="card-header">
+                  <div>
+                    <h3>
+                      Service & Operational Efficiency – AI That Works Alongside
+                      Your Teamss
+                    </h3>
+                    <p class="description">
+                      Financial institutions handle massive volumes of customer
+                      inquiries across email, voice, and chat channels. Delays
+                      and inaccuracies arise due to staffing constraints,
+                      complex regulations, training gaps, and reliance on legacy
+                      systems.
+                    </p>
+                  </div>
+                  <span class="number">03</span>
+                </div>
+
+                <p class="details">
+                  Talisma's AI-powered efficiency solutions bring intelligence
+                  directly into frontline operations. Email Assist summarizes
+                  incoming emails, identifies sentiment, generates response
+                  drafts, and recommends next-best actions. Voice Assist
+                  provides real-time guidance during live calls. AI-driven Voice
+                  Bots and Chatbots handle routine inquiries autonomously,
+                  reducing call center load and delivering consistent responses.
+                </p>
+
+                <p class="personas">
+                  <strong>Primary Buyer Personas:</strong> VP Customer Service,
+                  CTO, COO
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section -->
+    <section class="impact">
+      <div class="impact-container">
+        <!-- Header -->
+        <div class="impact-header">
+          <h2>Business Impact & <span>Outcomes</span></h2>
+          <p>
+            Financial institutions deploying Talisma's AI-powered solutions
+            achieve measurable gains across compliance, customer experience, and
+            operational efficiency.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="icon purple">🛡️</div>
+            <h3>Faster DPDP Compliance</h3>
+            <p>
+              Automate compliance workflows across systems with AI-powered data
+              masking, tokenization, and continuous audit logging—reducing
+              manual effort and regulatory risk.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="icon indigo">📊</div>
+            <h3>Improved Regulatory Confidence</h3>
+            <p>
+              Gain real-time visibility into data usage, access patterns, and
+              risk indicators with continuous compliance monitoring rather than
+              periodic checks.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="icon pink">❤️</div>
+            <h3>Enhanced Customer Trust</h3>
+            <p>
+              Build confidence through transparent data protection practices and
+              secure, personalized engagement across all customer touchpoints.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="icon blue">📈</div>
+            <h3>Higher Cross-Sell Performance</h3>
+            <p>
+              Leverage AI-driven Customer 360 Intelligence to identify
+              opportunities, predict purchase likelihood, and deliver next-best
+              actions to sales teams.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="icon teal">📉</div>
+            <h3>Reduced Operational Costs</h3>
+            <p>
+              Deflect routine inquiries to AI chatbots and voice bots while
+              empowering agents with Email Assist and Voice Assist for faster,
+              more accurate responses.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="icon orange">🚀</div>
+            <h3>Scalable Foundation</h3>
+            <p>
+              Build on a modern AI-powered platform that integrates with
+              existing systems and scales to support future growth and evolving
+              regulatory requirements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="impact-cta">
+          <h3>See Talisma in Action</h3>
+          <p>
+            Join leading financial institutions leveraging AI to navigate
+            regulatory compliance, elevate customer experience, and achieve
+            operational excellence.
+          </p>
+          <button>Request a Demo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- transform section -->
+    <section class="transform">
+      <div class="transform-container">
+        <!-- Header -->
+        <div class="transform-header">
+          <h2>Ready to <span>Transform</span> Guest Experiences</h2>
+        </div>
+
+        <!-- Benefits -->
+        <div class="transform-grid">
+          <!-- Item 1 -->
+          <div class="transform-item">
+            <div class="check-icon">✓</div>
+            <div class="content">
+              <h3>System Integration Support</h3>
+              <p>
+                Talisma integrates seamlessly with your core banking systems,
+                loan platforms, CRM, and service desks without disrupting
+                operations—ensuring immediate value and minimal friction.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="transform-item">
+            <div class="check-icon">✓</div>
+            <div class="content">
+              <h3>Proven in BFSI</h3>
+              <p>
+                Our AI-powered platforms have helped financial institutions
+                across India achieve regulatory compliance, improve customer
+                satisfaction, and reduce service costs with measurable,
+                repeatable results.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="transform-item">
+            <div class="check-icon">✓</div>
+            <div class="content">
+              <h3>Pilot Programs Available</h3>
+              <p>
+                Start with a focused pilot to validate impact on compliance,
+                customer intelligence, or service efficiency before scaling
+                across your organization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="cta-container">
+        <div class="cta-content">
+          <!-- Text -->
+          <div class="cta-text">
+            <h2>
+              Ready to elevate your compliance, customer intelligence, and
+              operational efficiency?
+            </h2>
+            <p>
+              Let's build your roadmap for AI-powered transformation in the
+              financial sector.
+            </p>
+          </div>
+
+          <!-- Button -->
+          <button class="cta-button">Speak with Our Team</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="faq-container">
+        <h2 class="faq-title">FAQs</h2>
+
+        <div class="faq-list">
+          <!-- FAQ ITEM -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >How does Talisma automate DPDP compliance for financial
+                institutions?</span
+              >
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Talisma uses AI to automate data masking, tokenization of PII,
+              role-based access controls, continuous audit logging, and
+              breach-response workflows. Compliance teams gain real-time
+              visibility into data usage and risk indicators, ensuring
+              continuous compliance rather than periodic manual checks.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >What is Customer 360 Intelligence and how does it work?</span
+              >
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Customer 360 Intelligence unifies fragmented data from core
+              banking systems, loan platforms, CRM tools, and service desks into
+              a single, AI-enriched view. This enables service teams to see
+              complete customer history, while sales teams receive AI
+              predictions for cross-sell opportunities and next-best actions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >Can Talisma integrate with our existing banking systems?</span
+              >
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Yes, Talisma seamlessly integrates with core banking systems, loan
+              origination platforms, CRM tools, service desks, and digital
+              channels without disrupting operations or requiring system
+              replacement.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What AI-powered tools does Talisma provide?</span>
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Talisma includes Email Assist for summarization and response
+              generation, Voice Assist for real-time agent guidance during
+              calls, and AI Chatbots/Voice Bots for autonomous handling of
+              routine inquiries—reducing call center load and improving response
+              quality.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span
+                >Is Talisma suitable for large banks and financial
+                institutions??</span
+              >
+              <span class="chevron">›</span>
+            </button>
+            <div class="faq-answer">
+              Absolutely. Talisma scales to support institutions of all sizes,
+              from regional banks to national financial institutions, ensuring
+              consistent compliance, customer intelligence, and operational
+              efficiency across all divisions and branches.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const questions = document.querySelectorAll(".faq-question");
+
+      questions.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          const isOpen = item.classList.contains("open");
+
+          document.querySelectorAll(".faq-item").forEach((i) => {
+            i.classList.remove("open");
+          });
+
+          if (!isOpen) {
+            item.classList.add("open");
+          }
+        });
+      });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- TOP GRID -->
+        <div class="footer-grid">
+          <!-- BRAND -->
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <img src="images/logo white.png" alt="" />
+            </div>
+            <p>
+              Empowering educational institutions with AI-driven solutions to
+              enhance student success and streamline operations.
+            </p>
+          </div>
+
+          <!-- SOLUTIONS -->
+          <div class="footer-col">
+            <h3>Solutions</h3>
+            <ul>
+              <li><a href="#">AI Admissions</a></li>
+              <li><a href="#">Intelligent LMS</a></li>
+              <li><a href="#">Analytics Platform</a></li>
+            </ul>
+          </div>
+
+          <!-- PLATFORM -->
+          <div class="footer-col">
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integration</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+
+          <!-- CONNECT -->
+          <div class="footer-col">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom">
+          <p>© 2026 Talisma Solutions, LLC. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
