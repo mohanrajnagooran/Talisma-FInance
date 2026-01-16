@@ -44,14 +44,16 @@
   gap: 32px;
 }
 
+.home-btn{
+  background:red;
+}
 .nav-desktop a,
 .nav-mobile a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   transition: 0.3s;
-  background: red;
-  padding: 5px 20px;
+  padding: 10px 20px;
   border-radius: 999px;
 }
 
@@ -93,6 +95,10 @@
   flex-direction: column;
   gap: 16px;
   padding: 16px 0;
+}
+
+.nav-mobile .home-btn{
+  text-align:center;
 }
 
 .nav-mobile.open {
